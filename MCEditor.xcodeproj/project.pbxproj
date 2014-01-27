@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF600FC41896FB730077B0AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF600FC31896FB730077B0AC /* Foundation.framework */; };
+		AF600FD21896FB730077B0AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF600FD11896FB730077B0AC /* XCTest.framework */; };
+		AF600FD31896FB730077B0AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF600FC31896FB730077B0AC /* Foundation.framework */; };
+		AF600FD51896FB730077B0AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF600FD41896FB730077B0AC /* UIKit.framework */; };
+		AF600FD81896FB730077B0AC /* libMCEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF600FC01896FB730077B0AC /* libMCEditor.a */; };
+		AF600FDE1896FB730077B0AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF600FDC1896FB730077B0AC /* InfoPlist.strings */; };
+		AF600FE01896FB730077B0AC /* MCEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FDF1896FB730077B0AC /* MCEditorTests.m */; };
+		AF6010351896FC070077B0AC /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FEC1896FC070077B0AC /* Animal.m */; };
+		AF6010361896FC070077B0AC /* Arrow.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FEE1896FC070077B0AC /* Arrow.m */; };
+		AF6010371896FC070077B0AC /* Chicken.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FF01896FC070077B0AC /* Chicken.m */; };
+		AF6010381896FC070077B0AC /* Cow.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FF21896FC070077B0AC /* Cow.m */; };
+		AF6010391896FC070077B0AC /* Creeper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FF41896FC070077B0AC /* Creeper.m */; };
+		AF60103A1896FC070077B0AC /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FF61896FC070077B0AC /* Egg.m */; };
+		AF60103B1896FC070077B0AC /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FF81896FC070077B0AC /* Entity.m */; };
+		AF60103C1896FC070077B0AC /* FallingBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FFB1896FC070077B0AC /* FallingBlock.m */; };
+		AF60103D1896FC070077B0AC /* InventorySlot.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FFD1896FC070077B0AC /* InventorySlot.m */; };
+		AF60103E1896FC070077B0AC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600FFF1896FC070077B0AC /* Item.m */; };
+		AF60103F1896FC070077B0AC /* ItemStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010011896FC070077B0AC /* ItemStack.m */; };
+		AF6010401896FC070077B0AC /* LivingEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010031896FC070077B0AC /* LivingEntity.m */; };
+		AF6010411896FC070077B0AC /* Minecart.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010051896FC070077B0AC /* Minecart.m */; };
+		AF6010421896FC070077B0AC /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010071896FC070077B0AC /* Monster.m */; };
+		AF6010431896FC070077B0AC /* NetherReactorTileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010091896FC070077B0AC /* NetherReactorTileEntity.m */; };
+		AF6010441896FC070077B0AC /* Painting.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60100B1896FC070077B0AC /* Painting.m */; };
+		AF6010451896FC070077B0AC /* Pig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60100D1896FC070077B0AC /* Pig.m */; };
+		AF6010461896FC070077B0AC /* PigZombie.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60100F1896FC070077B0AC /* PigZombie.m */; };
+		AF6010471896FC070077B0AC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010111896FC070077B0AC /* Player.m */; };
+		AF6010481896FC070077B0AC /* PlayerAbilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010131896FC070077B0AC /* PlayerAbilities.m */; };
+		AF6010491896FC070077B0AC /* Projectile.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010151896FC070077B0AC /* Projectile.m */; };
+		AF60104A1896FC070077B0AC /* Sheep.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010171896FC070077B0AC /* Sheep.m */; };
+		AF60104B1896FC070077B0AC /* Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010191896FC070077B0AC /* Skeleton.m */; };
+		AF60104C1896FC070077B0AC /* Snowball.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101B1896FC070077B0AC /* Snowball.m */; };
+		AF60104D1896FC070077B0AC /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101D1896FC070077B0AC /* Spider.m */; };
+		AF60104E1896FC070077B0AC /* TileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101F1896FC070077B0AC /* TileEntity.m */; };
+		AF60104F1896FC070077B0AC /* TNTPrimed.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010211896FC070077B0AC /* TNTPrimed.m */; };
+		AF6010501896FC070077B0AC /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010231896FC070077B0AC /* Zombie.m */; };
+		AF6010511896FC070077B0AC /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010251896FC070077B0AC /* Level.m */; };
+		AF6010521896FC070077B0AC /* ChestTileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010281896FC070077B0AC /* ChestTileEntity.m */; };
+		AF6010531896FC070077B0AC /* ContainerTileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60102A1896FC070077B0AC /* ContainerTileEntity.m */; };
+		AF6010541896FC070077B0AC /* FurnaceTileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60102C1896FC070077B0AC /* FurnaceTileEntity.m */; };
+		AF6010551896FC070077B0AC /* SignTileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60102E1896FC070077B0AC /* SignTileEntity.m */; };
+		AF6010561896FC070077B0AC /* TileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010301896FC070077B0AC /* TileEntity.m */; };
+		AF6010571896FC070077B0AC /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010341896FC070077B0AC /* Vector3f.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF600FD61896FB730077B0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF600FB81896FB730077B0AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF600FBF1896FB730077B0AC;
+			remoteInfo = MCEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF600FBE1896FB730077B0AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF600FC01896FB730077B0AC /* libMCEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMCEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF600FC31896FB730077B0AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF600FC71896FB730077B0AC /* MCEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCEditor-Prefix.pch"; sourceTree = "<group>"; };
+		AF600FD01896FB730077B0AC /* MCEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF600FD11896FB730077B0AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF600FD41896FB730077B0AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF600FDB1896FB730077B0AC /* MCEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCEditorTests-Info.plist"; sourceTree = "<group>"; };
+		AF600FDD1896FB730077B0AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF600FDF1896FB730077B0AC /* MCEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEditorTests.m; sourceTree = "<group>"; };
+		AF600FEB1896FC070077B0AC /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		AF600FEC1896FC070077B0AC /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		AF600FED1896FC070077B0AC /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrow.h; sourceTree = "<group>"; };
+		AF600FEE1896FC070077B0AC /* Arrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrow.m; sourceTree = "<group>"; };
+		AF600FEF1896FC070077B0AC /* Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chicken.h; sourceTree = "<group>"; };
+		AF600FF01896FC070077B0AC /* Chicken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chicken.m; sourceTree = "<group>"; };
+		AF600FF11896FC070077B0AC /* Cow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cow.h; sourceTree = "<group>"; };
+		AF600FF21896FC070077B0AC /* Cow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cow.m; sourceTree = "<group>"; };
+		AF600FF31896FC070077B0AC /* Creeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creeper.h; sourceTree = "<group>"; };
+		AF600FF41896FC070077B0AC /* Creeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creeper.m; sourceTree = "<group>"; };
+		AF600FF51896FC070077B0AC /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
+		AF600FF61896FC070077B0AC /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Egg.m; sourceTree = "<group>"; };
+		AF600FF71896FC070077B0AC /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		AF600FF81896FC070077B0AC /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		AF600FF91896FC070077B0AC /* EntityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityType.h; sourceTree = "<group>"; };
+		AF600FFA1896FC070077B0AC /* FallingBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallingBlock.h; sourceTree = "<group>"; };
+		AF600FFB1896FC070077B0AC /* FallingBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FallingBlock.m; sourceTree = "<group>"; };
+		AF600FFC1896FC070077B0AC /* InventorySlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventorySlot.h; sourceTree = "<group>"; };
+		AF600FFD1896FC070077B0AC /* InventorySlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventorySlot.m; sourceTree = "<group>"; };
+		AF600FFE1896FC070077B0AC /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		AF600FFF1896FC070077B0AC /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		AF6010001896FC070077B0AC /* ItemStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStack.h; sourceTree = "<group>"; };
+		AF6010011896FC070077B0AC /* ItemStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStack.m; sourceTree = "<group>"; };
+		AF6010021896FC070077B0AC /* LivingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingEntity.h; sourceTree = "<group>"; };
+		AF6010031896FC070077B0AC /* LivingEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivingEntity.m; sourceTree = "<group>"; };
+		AF6010041896FC070077B0AC /* Minecart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minecart.h; sourceTree = "<group>"; };
+		AF6010051896FC070077B0AC /* Minecart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minecart.m; sourceTree = "<group>"; };
+		AF6010061896FC070077B0AC /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		AF6010071896FC070077B0AC /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+		AF6010081896FC070077B0AC /* NetherReactorTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetherReactorTileEntity.h; sourceTree = "<group>"; };
+		AF6010091896FC070077B0AC /* NetherReactorTileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetherReactorTileEntity.m; sourceTree = "<group>"; };
+		AF60100A1896FC070077B0AC /* Painting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Painting.h; sourceTree = "<group>"; };
+		AF60100B1896FC070077B0AC /* Painting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Painting.m; sourceTree = "<group>"; };
+		AF60100C1896FC070077B0AC /* Pig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pig.h; sourceTree = "<group>"; };
+		AF60100D1896FC070077B0AC /* Pig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pig.m; sourceTree = "<group>"; };
+		AF60100E1896FC070077B0AC /* PigZombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigZombie.h; sourceTree = "<group>"; };
+		AF60100F1896FC070077B0AC /* PigZombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PigZombie.m; sourceTree = "<group>"; };
+		AF6010101896FC070077B0AC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		AF6010111896FC070077B0AC /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		AF6010121896FC070077B0AC /* PlayerAbilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAbilities.h; sourceTree = "<group>"; };
+		AF6010131896FC070077B0AC /* PlayerAbilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerAbilities.m; sourceTree = "<group>"; };
+		AF6010141896FC070077B0AC /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
+		AF6010151896FC070077B0AC /* Projectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projectile.m; sourceTree = "<group>"; };
+		AF6010161896FC070077B0AC /* Sheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sheep.h; sourceTree = "<group>"; };
+		AF6010171896FC070077B0AC /* Sheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sheep.m; sourceTree = "<group>"; };
+		AF6010181896FC070077B0AC /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
+		AF6010191896FC070077B0AC /* Skeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skeleton.m; sourceTree = "<group>"; };
+		AF60101A1896FC070077B0AC /* Snowball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snowball.h; sourceTree = "<group>"; };
+		AF60101B1896FC070077B0AC /* Snowball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snowball.m; sourceTree = "<group>"; };
+		AF60101C1896FC070077B0AC /* Spider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
+		AF60101D1896FC070077B0AC /* Spider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spider.m; sourceTree = "<group>"; };
+		AF60101E1896FC070077B0AC /* TileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileEntity.h; sourceTree = "<group>"; };
+		AF60101F1896FC070077B0AC /* TileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileEntity.m; sourceTree = "<group>"; };
+		AF6010201896FC070077B0AC /* TNTPrimed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTPrimed.h; sourceTree = "<group>"; };
+		AF6010211896FC070077B0AC /* TNTPrimed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTPrimed.m; sourceTree = "<group>"; };
+		AF6010221896FC070077B0AC /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
+		AF6010231896FC070077B0AC /* Zombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zombie.m; sourceTree = "<group>"; };
+		AF6010241896FC070077B0AC /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		AF6010251896FC070077B0AC /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+		AF6010271896FC070077B0AC /* ChestTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChestTileEntity.h; sourceTree = "<group>"; };
+		AF6010281896FC070077B0AC /* ChestTileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChestTileEntity.m; sourceTree = "<group>"; };
+		AF6010291896FC070077B0AC /* ContainerTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerTileEntity.h; sourceTree = "<group>"; };
+		AF60102A1896FC070077B0AC /* ContainerTileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerTileEntity.m; sourceTree = "<group>"; };
+		AF60102B1896FC070077B0AC /* FurnaceTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FurnaceTileEntity.h; sourceTree = "<group>"; };
+		AF60102C1896FC070077B0AC /* FurnaceTileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FurnaceTileEntity.m; sourceTree = "<group>"; };
+		AF60102D1896FC070077B0AC /* SignTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignTileEntity.h; sourceTree = "<group>"; };
+		AF60102E1896FC070077B0AC /* SignTileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignTileEntity.m; sourceTree = "<group>"; };
+		AF60102F1896FC070077B0AC /* TileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileEntity.h; sourceTree = "<group>"; };
+		AF6010301896FC070077B0AC /* TileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileEntity.m; sourceTree = "<group>"; };
+		AF6010321896FC070077B0AC /* GameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameType.h; sourceTree = "<group>"; };
+		AF6010331896FC070077B0AC /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
+		AF6010341896FC070077B0AC /* Vector3f.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector3f.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF600FBD1896FB730077B0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF600FC41896FB730077B0AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF600FCD1896FB730077B0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF600FD21896FB730077B0AC /* XCTest.framework in Frameworks */,
+				AF600FD51896FB730077B0AC /* UIKit.framework in Frameworks */,
+				AF600FD81896FB730077B0AC /* libMCEditor.a in Frameworks */,
+				AF600FD31896FB730077B0AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF600FB71896FB730077B0AC = {
+			isa = PBXGroup;
+			children = (
+				AF600FC51896FB730077B0AC /* MCEditor */,
+				AF600FD91896FB730077B0AC /* MCEditorTests */,
+				AF600FC21896FB730077B0AC /* Frameworks */,
+				AF600FC11896FB730077B0AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF600FC11896FB730077B0AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FC01896FB730077B0AC /* libMCEditor.a */,
+				AF600FD01896FB730077B0AC /* MCEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF600FC21896FB730077B0AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FC31896FB730077B0AC /* Foundation.framework */,
+				AF600FD11896FB730077B0AC /* XCTest.framework */,
+				AF600FD41896FB730077B0AC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF600FC51896FB730077B0AC /* MCEditor */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FE91896FC070077B0AC /* Model */,
+				AF6010311896FC070077B0AC /* Util */,
+				AF600FC61896FB730077B0AC /* Supporting Files */,
+			);
+			path = MCEditor;
+			sourceTree = "<group>";
+		};
+		AF600FC61896FB730077B0AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FC71896FB730077B0AC /* MCEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF600FD91896FB730077B0AC /* MCEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FDF1896FB730077B0AC /* MCEditorTests.m */,
+				AF600FDA1896FB730077B0AC /* Supporting Files */,
+			);
+			path = MCEditorTests;
+			sourceTree = "<group>";
+		};
+		AF600FDA1896FB730077B0AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FDB1896FB730077B0AC /* MCEditorTests-Info.plist */,
+				AF600FDC1896FB730077B0AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF600FE91896FC070077B0AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FEA1896FC070077B0AC /* entity */,
+				AF6010241896FC070077B0AC /* Level.h */,
+				AF6010251896FC070077B0AC /* Level.m */,
+				AF6010261896FC070077B0AC /* tileentity */,
+			);
+			name = Model;
+			path = src/model;
+			sourceTree = "<group>";
+		};
+		AF600FEA1896FC070077B0AC /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF600FEB1896FC070077B0AC /* Animal.h */,
+				AF600FEC1896FC070077B0AC /* Animal.m */,
+				AF600FED1896FC070077B0AC /* Arrow.h */,
+				AF600FEE1896FC070077B0AC /* Arrow.m */,
+				AF600FEF1896FC070077B0AC /* Chicken.h */,
+				AF600FF01896FC070077B0AC /* Chicken.m */,
+				AF600FF11896FC070077B0AC /* Cow.h */,
+				AF600FF21896FC070077B0AC /* Cow.m */,
+				AF600FF31896FC070077B0AC /* Creeper.h */,
+				AF600FF41896FC070077B0AC /* Creeper.m */,
+				AF600FF51896FC070077B0AC /* Egg.h */,
+				AF600FF61896FC070077B0AC /* Egg.m */,
+				AF600FF71896FC070077B0AC /* Entity.h */,
+				AF600FF81896FC070077B0AC /* Entity.m */,
+				AF600FF91896FC070077B0AC /* EntityType.h */,
+				AF600FFA1896FC070077B0AC /* FallingBlock.h */,
+				AF600FFB1896FC070077B0AC /* FallingBlock.m */,
+				AF600FFC1896FC070077B0AC /* InventorySlot.h */,
+				AF600FFD1896FC070077B0AC /* InventorySlot.m */,
+				AF600FFE1896FC070077B0AC /* Item.h */,
+				AF600FFF1896FC070077B0AC /* Item.m */,
+				AF6010001896FC070077B0AC /* ItemStack.h */,
+				AF6010011896FC070077B0AC /* ItemStack.m */,
+				AF6010021896FC070077B0AC /* LivingEntity.h */,
+				AF6010031896FC070077B0AC /* LivingEntity.m */,
+				AF6010041896FC070077B0AC /* Minecart.h */,
+				AF6010051896FC070077B0AC /* Minecart.m */,
+				AF6010061896FC070077B0AC /* Monster.h */,
+				AF6010071896FC070077B0AC /* Monster.m */,
+				AF6010081896FC070077B0AC /* NetherReactorTileEntity.h */,
+				AF6010091896FC070077B0AC /* NetherReactorTileEntity.m */,
+				AF60100A1896FC070077B0AC /* Painting.h */,
+				AF60100B1896FC070077B0AC /* Painting.m */,
+				AF60100C1896FC070077B0AC /* Pig.h */,
+				AF60100D1896FC070077B0AC /* Pig.m */,
+				AF60100E1896FC070077B0AC /* PigZombie.h */,
+				AF60100F1896FC070077B0AC /* PigZombie.m */,
+				AF6010101896FC070077B0AC /* Player.h */,
+				AF6010111896FC070077B0AC /* Player.m */,
+				AF6010121896FC070077B0AC /* PlayerAbilities.h */,
+				AF6010131896FC070077B0AC /* PlayerAbilities.m */,
+				AF6010141896FC070077B0AC /* Projectile.h */,
+				AF6010151896FC070077B0AC /* Projectile.m */,
+				AF6010161896FC070077B0AC /* Sheep.h */,
+				AF6010171896FC070077B0AC /* Sheep.m */,
+				AF6010181896FC070077B0AC /* Skeleton.h */,
+				AF6010191896FC070077B0AC /* Skeleton.m */,
+				AF60101A1896FC070077B0AC /* Snowball.h */,
+				AF60101B1896FC070077B0AC /* Snowball.m */,
+				AF60101C1896FC070077B0AC /* Spider.h */,
+				AF60101D1896FC070077B0AC /* Spider.m */,
+				AF60101E1896FC070077B0AC /* TileEntity.h */,
+				AF60101F1896FC070077B0AC /* TileEntity.m */,
+				AF6010201896FC070077B0AC /* TNTPrimed.h */,
+				AF6010211896FC070077B0AC /* TNTPrimed.m */,
+				AF6010221896FC070077B0AC /* Zombie.h */,
+				AF6010231896FC070077B0AC /* Zombie.m */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		AF6010261896FC070077B0AC /* tileentity */ = {
+			isa = PBXGroup;
+			children = (
+				AF6010271896FC070077B0AC /* ChestTileEntity.h */,
+				AF6010281896FC070077B0AC /* ChestTileEntity.m */,
+				AF6010291896FC070077B0AC /* ContainerTileEntity.h */,
+				AF60102A1896FC070077B0AC /* ContainerTileEntity.m */,
+				AF60102B1896FC070077B0AC /* FurnaceTileEntity.h */,
+				AF60102C1896FC070077B0AC /* FurnaceTileEntity.m */,
+				AF60102D1896FC070077B0AC /* SignTileEntity.h */,
+				AF60102E1896FC070077B0AC /* SignTileEntity.m */,
+				AF60102F1896FC070077B0AC /* TileEntity.h */,
+				AF6010301896FC070077B0AC /* TileEntity.m */,
+			);
+			path = tileentity;
+			sourceTree = "<group>";
+		};
+		AF6010311896FC070077B0AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AF6010321896FC070077B0AC /* GameType.h */,
+				AF6010331896FC070077B0AC /* Vector3f.h */,
+				AF6010341896FC070077B0AC /* Vector3f.m */,
+			);
+			name = Util;
+			path = src/util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF600FBF1896FB730077B0AC /* MCEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF600FE31896FB730077B0AC /* Build configuration list for PBXNativeTarget "MCEditor" */;
+			buildPhases = (
+				AF600FBC1896FB730077B0AC /* Sources */,
+				AF600FBD1896FB730077B0AC /* Frameworks */,
+				AF600FBE1896FB730077B0AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCEditor;
+			productName = MCEditor;
+			productReference = AF600FC01896FB730077B0AC /* libMCEditor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF600FCF1896FB730077B0AC /* MCEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF600FE61896FB730077B0AC /* Build configuration list for PBXNativeTarget "MCEditorTests" */;
+			buildPhases = (
+				AF600FCC1896FB730077B0AC /* Sources */,
+				AF600FCD1896FB730077B0AC /* Frameworks */,
+				AF600FCE1896FB730077B0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF600FD71896FB730077B0AC /* PBXTargetDependency */,
+			);
+			name = MCEditorTests;
+			productName = MCEditorTests;
+			productReference = AF600FD01896FB730077B0AC /* MCEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF600FB81896FB730077B0AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Redlake;
+			};
+			buildConfigurationList = AF600FBB1896FB730077B0AC /* Build configuration list for PBXProject "MCEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF600FB71896FB730077B0AC;
+			productRefGroup = AF600FC11896FB730077B0AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF600FBF1896FB730077B0AC /* MCEditor */,
+				AF600FCF1896FB730077B0AC /* MCEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF600FCE1896FB730077B0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF600FDE1896FB730077B0AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF600FBC1896FB730077B0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF60103F1896FC070077B0AC /* ItemStack.m in Sources */,
+				AF60104A1896FC070077B0AC /* Sheep.m in Sources */,
+				AF60103E1896FC070077B0AC /* Item.m in Sources */,
+				AF6010491896FC070077B0AC /* Projectile.m in Sources */,
+				AF60103B1896FC070077B0AC /* Entity.m in Sources */,
+				AF60103C1896FC070077B0AC /* FallingBlock.m in Sources */,
+				AF60104E1896FC070077B0AC /* TileEntity.m in Sources */,
+				AF6010511896FC070077B0AC /* Level.m in Sources */,
+				AF6010531896FC070077B0AC /* ContainerTileEntity.m in Sources */,
+				AF6010551896FC070077B0AC /* SignTileEntity.m in Sources */,
+				AF60104F1896FC070077B0AC /* TNTPrimed.m in Sources */,
+				AF6010461896FC070077B0AC /* PigZombie.m in Sources */,
+				AF6010421896FC070077B0AC /* Monster.m in Sources */,
+				AF6010351896FC070077B0AC /* Animal.m in Sources */,
+				AF6010481896FC070077B0AC /* PlayerAbilities.m in Sources */,
+				AF6010431896FC070077B0AC /* NetherReactorTileEntity.m in Sources */,
+				AF6010451896FC070077B0AC /* Pig.m in Sources */,
+				AF6010571896FC070077B0AC /* Vector3f.m in Sources */,
+				AF6010471896FC070077B0AC /* Player.m in Sources */,
+				AF60103D1896FC070077B0AC /* InventorySlot.m in Sources */,
+				AF6010391896FC070077B0AC /* Creeper.m in Sources */,
+				AF6010411896FC070077B0AC /* Minecart.m in Sources */,
+				AF6010401896FC070077B0AC /* LivingEntity.m in Sources */,
+				AF6010381896FC070077B0AC /* Cow.m in Sources */,
+				AF60103A1896FC070077B0AC /* Egg.m in Sources */,
+				AF6010501896FC070077B0AC /* Zombie.m in Sources */,
+				AF60104B1896FC070077B0AC /* Skeleton.m in Sources */,
+				AF6010371896FC070077B0AC /* Chicken.m in Sources */,
+				AF6010361896FC070077B0AC /* Arrow.m in Sources */,
+				AF6010521896FC070077B0AC /* ChestTileEntity.m in Sources */,
+				AF6010441896FC070077B0AC /* Painting.m in Sources */,
+				AF6010541896FC070077B0AC /* FurnaceTileEntity.m in Sources */,
+				AF60104C1896FC070077B0AC /* Snowball.m in Sources */,
+				AF6010561896FC070077B0AC /* TileEntity.m in Sources */,
+				AF60104D1896FC070077B0AC /* Spider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF600FCC1896FB730077B0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF600FE01896FB730077B0AC /* MCEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF600FD71896FB730077B0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF600FBF1896FB730077B0AC /* MCEditor */;
+			targetProxy = AF600FD61896FB730077B0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF600FDC1896FB730077B0AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF600FDD1896FB730077B0AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF600FE11896FB730077B0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF600FE21896FB730077B0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF600FE41896FB730077B0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MCEditor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCEditor/MCEditor-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF600FE51896FB730077B0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MCEditor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCEditor/MCEditor-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AF600FE71896FB730077B0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCEditor/MCEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MCEditorTests/MCEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF600FE81896FB730077B0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCEditor/MCEditor-Prefix.pch";
+				INFOPLIST_FILE = "MCEditorTests/MCEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF600FBB1896FB730077B0AC /* Build configuration list for PBXProject "MCEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF600FE11896FB730077B0AC /* Debug */,
+				AF600FE21896FB730077B0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF600FE31896FB730077B0AC /* Build configuration list for PBXNativeTarget "MCEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF600FE41896FB730077B0AC /* Debug */,
+				AF600FE51896FB730077B0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF600FE61896FB730077B0AC /* Build configuration list for PBXNativeTarget "MCEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF600FE71896FB730077B0AC /* Debug */,
+				AF600FE81896FB730077B0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF600FB81896FB730077B0AC /* Project object */;
+}
