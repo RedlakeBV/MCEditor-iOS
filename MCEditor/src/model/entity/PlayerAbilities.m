@@ -25,4 +25,24 @@
     _invulnerable = gameType;
 }
 
+-(id)initWithDictionary:(NSDictionary *)dictionary {
+    self = [self init];
+    if(self) {
+        _flying = [[dictionary objectForKey:@"flying"] boolValue];
+        _instabuild = [[dictionary objectForKey:@"instabuild"] boolValue];
+        _invulnerable = [[dictionary objectForKey:@"invulnerable"] boolValue];
+        _mayFly = [[dictionary objectForKey:@"mayfly"] boolValue];
+    }
+    return self;
+}
+
+-(NSDictionary *)dictionary {
+    return @{
+             @"flying" : [NSNumber numberWithBool: _flying],
+             @"instabuild" : [NSNumber numberWithBool: _instabuild],
+             @"invulnerable" : [NSNumber numberWithBool: _invulnerable],
+             @"mayfly" : [NSNumber numberWithBool: _mayFly],
+             };
+}
+
 @end

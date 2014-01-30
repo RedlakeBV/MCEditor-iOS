@@ -14,4 +14,19 @@
     return EntityType_PLAYER;
 }
 
+
+-(NSDictionary*)dictionary {
+    return _playerDictionary;
+}
+
+-(id)initWithDictionary:(NSDictionary*) dictionary {
+    
+    self  = [super init];
+    if(self) {
+        
+    }
+    return self;
+}
+
+
 @end
