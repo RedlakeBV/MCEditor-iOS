@@ -14,7 +14,7 @@
 
 @interface Level : NSObject <DictionaryConverter>
 
-@property GameType gameType;
+@property (nonatomic) GameType gameType;
 @property long lastPlayed;
 @property NSString * levelName;
 @property NSInteger platform;
@@ -28,6 +28,6 @@
 @property BOOL spawnMobs;
 @property NSArray * entities;
 @property NSArray * tileEntities;
-@property NSFileHandle * rootDirectory;
+@property NSString * rootDirectory;
 
 @end

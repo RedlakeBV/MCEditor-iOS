@@ -7,25 +7,26 @@
 //
 
 #import "Level.h"
+#import "NBTNumbers.h"
 
 @implementation Level
 
 -(NSDictionary*)dictionary {
     return @{
-             @"GameType" : [NSNumber numberWithBool:_gameType],
-             @"LastPlayed" : [NSNumber numberWithLong: _lastPlayed],
+             @"GameType" : NBTInt(_gameType),
+             @"LastPlayed" : NBTLong(_lastPlayed),
              @"LevelName" : _levelName,
-             @"Platform" : [NSNumber numberWithInteger:_platform],
+             @"Platform" : NBTInt(_platform),
              @"Player" : [_player dictionary],
-             @"RandomSeed" : [NSNumber numberWithLong: _randomSeed],
-             @"SizeOnDisk" : [NSNumber numberWithLong: _sizeOnDisk],
-             @"SpawnX" : [NSNumber numberWithFloat: _spawnPosition.blockX],
-             @"SpawnY" : [NSNumber numberWithFloat: _spawnPosition.blockY],
-             @"SpawnZ" : [NSNumber numberWithFloat: _spawnPosition.blockZ],
-             @"StorageVersion" : [NSNumber numberWithInteger: _storageVersion],
-             @"Time" : [NSNumber numberWithLong: _time],
-             @"dayCycleStopTime" : [NSNumber numberWithLong: _dayCycleStopTime],
-             @"spawnMobs" : [NSNumber numberWithBool: _spawnMobs],
+             @"RandomSeed" : NBTLong(_randomSeed),
+             @"SizeOnDisk" : NBTLong(_sizeOnDisk),
+             @"SpawnX" : NBTInt(_spawnPosition.blockX),
+             @"SpawnY" : NBTInt(_spawnPosition.blockY),
+             @"SpawnZ" : NBTInt(_spawnPosition.blockZ),
+             @"StorageVersion" : NBTInt(_storageVersion),
+             @"Time" : NBTLong(_time),
+             @"dayCycleStopTime" : NBTLong(_dayCycleStopTime),
+             @"spawnMobs" : NBTByte(_spawnMobs),
              };
 }
 
@@ -36,11 +37,7 @@
         [self setLastPlayed: [[dictionary objectForKey:@"LastPlayed"] longValue]];
         [self setLevelName: [dictionary objectForKey:@"LevelName"]];
         [self setPlatform: [[dictionary objectForKey:@"Platform"] integerValue]];
-        
-        // TODO: change to object.
-        Player * player = [[Player alloc] init];
-        [player setPlayerDictionary:  [dictionary objectForKey:@"Player"]];
-        [self setPlayer: player];
+        [self setPlayer: [[Player alloc] initWithDictionary:[dictionary objectForKey:@"Player"]]];
         [self setRandomSeed: [[dictionary objectForKey: @"RandomSeed"] longValue]];
         [self setSizeOnDisk: [[dictionary objectForKey: @"SizeOnDisk"] longValue]];
         

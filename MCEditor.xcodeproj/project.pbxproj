@@ -35,7 +35,6 @@
 		AF4D5F26189926CC004A05AC /* Skeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6010181896FC070077B0AC /* Skeleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF4D5F27189926CC004A05AC /* Snowball.h in Headers */ = {isa = PBXBuildFile; fileRef = AF60101A1896FC070077B0AC /* Snowball.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF4D5F28189926CC004A05AC /* Spider.h in Headers */ = {isa = PBXBuildFile; fileRef = AF60101C1896FC070077B0AC /* Spider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF4D5F29189926CC004A05AC /* TileEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = AF60101E1896FC070077B0AC /* TileEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF4D5F2A189926CC004A05AC /* TNTPrimed.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6010201896FC070077B0AC /* TNTPrimed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF4D5F2B189926CC004A05AC /* Zombie.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6010221896FC070077B0AC /* Zombie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF4D5F2C189926CC004A05AC /* Level.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6010241896FC070077B0AC /* Level.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,7 +76,6 @@
 		AF60104B1896FC070077B0AC /* Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010191896FC070077B0AC /* Skeleton.m */; };
 		AF60104C1896FC070077B0AC /* Snowball.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101B1896FC070077B0AC /* Snowball.m */; };
 		AF60104D1896FC070077B0AC /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101D1896FC070077B0AC /* Spider.m */; };
-		AF60104E1896FC070077B0AC /* TileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF60101F1896FC070077B0AC /* TileEntity.m */; };
 		AF60104F1896FC070077B0AC /* TNTPrimed.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010211896FC070077B0AC /* TNTPrimed.m */; };
 		AF6010501896FC070077B0AC /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010231896FC070077B0AC /* Zombie.m */; };
 		AF6010511896FC070077B0AC /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6010251896FC070077B0AC /* Level.m */; };
@@ -90,10 +88,11 @@
 		AFB38D061897BD9700C69E7F /* EntityDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB38D051897BD9700C69E7F /* EntityDataConverter.m */; };
 		AFB38D0B1897BDCF00C69E7F /* LevelDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB38D0A1897BDCF00C69E7F /* LevelDataConverter.m */; };
 		AFBC1D89189A5E92008EA224 /* libNBTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC1D88189A5E92008EA224 /* libNBTKit.a */; };
-		AFBC1D91189A5EA0008EA224 /* MCRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1D8D189A5EA0008EA224 /* MCRegion.h */; };
-		AFBC1D92189A5EA0008EA224 /* NBTIntArray.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1D8E189A5EA0008EA224 /* NBTIntArray.h */; };
-		AFBC1D93189A5EA0008EA224 /* NBTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1D8F189A5EA0008EA224 /* NBTKit.h */; };
-		AFBC1D94189A5EA0008EA224 /* NBTNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1D90189A5EA0008EA224 /* NBTNumbers.h */; };
+		AFBC1DC9189A70EE008EA224 /* DictionaryConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1D98189A6500008EA224 /* DictionaryConverter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AFBC1E79189B985F008EA224 /* MCRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1E75189B985F008EA224 /* MCRegion.h */; };
+		AFBC1E7A189B985F008EA224 /* NBTIntArray.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1E76189B985F008EA224 /* NBTIntArray.h */; };
+		AFBC1E7B189B985F008EA224 /* NBTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1E77189B985F008EA224 /* NBTKit.h */; };
+		AFBC1E7C189B985F008EA224 /* NBTNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBC1E78189B985F008EA224 /* NBTNumbers.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,8 +178,6 @@
 		AF60101B1896FC070077B0AC /* Snowball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snowball.m; sourceTree = "<group>"; };
 		AF60101C1896FC070077B0AC /* Spider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
 		AF60101D1896FC070077B0AC /* Spider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spider.m; sourceTree = "<group>"; };
-		AF60101E1896FC070077B0AC /* TileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileEntity.h; sourceTree = "<group>"; };
-		AF60101F1896FC070077B0AC /* TileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileEntity.m; sourceTree = "<group>"; };
 		AF6010201896FC070077B0AC /* TNTPrimed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTPrimed.h; sourceTree = "<group>"; };
 		AF6010211896FC070077B0AC /* TNTPrimed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTPrimed.m; sourceTree = "<group>"; };
 		AF6010221896FC070077B0AC /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
@@ -205,12 +202,12 @@
 		AFB38D091897BDCF00C69E7F /* LevelDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelDataConverter.h; path = src/controller/converters/LevelDataConverter.h; sourceTree = "<group>"; };
 		AFB38D0A1897BDCF00C69E7F /* LevelDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelDataConverter.m; path = src/controller/converters/LevelDataConverter.m; sourceTree = "<group>"; };
 		AFBC1D88189A5E92008EA224 /* libNBTKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNBTKit.a; sourceTree = "<group>"; };
-		AFBC1D8D189A5EA0008EA224 /* MCRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRegion.h; sourceTree = "<group>"; };
-		AFBC1D8E189A5EA0008EA224 /* NBTIntArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTIntArray.h; sourceTree = "<group>"; };
-		AFBC1D8F189A5EA0008EA224 /* NBTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTKit.h; sourceTree = "<group>"; };
-		AFBC1D90189A5EA0008EA224 /* NBTNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTNumbers.h; sourceTree = "<group>"; };
 		AFBC1D96189A5EB0008EA224 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
 		AFBC1D98189A6500008EA224 /* DictionaryConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DictionaryConverter.h; path = src/protocol/DictionaryConverter.h; sourceTree = "<group>"; };
+		AFBC1E75189B985F008EA224 /* MCRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRegion.h; sourceTree = "<group>"; };
+		AFBC1E76189B985F008EA224 /* NBTIntArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTIntArray.h; sourceTree = "<group>"; };
+		AFBC1E77189B985F008EA224 /* NBTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTKit.h; sourceTree = "<group>"; };
+		AFBC1E78189B985F008EA224 /* NBTNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTNumbers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +288,7 @@
 		AF600FC61896FB730077B0AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF4D5F04189925ED004A05AC /* libs */,
 				AFBC1D95189A5EB0008EA224 /* Data */,
 				AF600FC71896FB730077B0AC /* MCEditor-Prefix.pch */,
 			);
@@ -381,8 +379,6 @@
 				AF60101B1896FC070077B0AC /* Snowball.m */,
 				AF60101C1896FC070077B0AC /* Spider.h */,
 				AF60101D1896FC070077B0AC /* Spider.m */,
-				AF60101E1896FC070077B0AC /* TileEntity.h */,
-				AF60101F1896FC070077B0AC /* TileEntity.m */,
 				AF6010201896FC070077B0AC /* TNTPrimed.h */,
 				AF6010211896FC070077B0AC /* TNTPrimed.m */,
 				AF6010221896FC070077B0AC /* Zombie.h */,
@@ -411,7 +407,6 @@
 		AF6010311896FC070077B0AC /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				AF4D5F04189925ED004A05AC /* libs */,
 				AF6010321896FC070077B0AC /* GameType.h */,
 				AF6010331896FC070077B0AC /* Vector3f.h */,
 				AF6010341896FC070077B0AC /* Vector3f.m */,
@@ -482,10 +477,10 @@
 		AFBC1D8C189A5EA0008EA224 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				AFBC1D8D189A5EA0008EA224 /* MCRegion.h */,
-				AFBC1D8E189A5EA0008EA224 /* NBTIntArray.h */,
-				AFBC1D8F189A5EA0008EA224 /* NBTKit.h */,
-				AFBC1D90189A5EA0008EA224 /* NBTNumbers.h */,
+				AFBC1E75189B985F008EA224 /* MCRegion.h */,
+				AFBC1E76189B985F008EA224 /* NBTIntArray.h */,
+				AFBC1E77189B985F008EA224 /* NBTKit.h */,
+				AFBC1E78189B985F008EA224 /* NBTNumbers.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -526,10 +521,9 @@
 				AF4D5F24189926CC004A05AC /* Projectile.h in Headers */,
 				AF4D5F25189926CC004A05AC /* Sheep.h in Headers */,
 				AF4D5F26189926CC004A05AC /* Skeleton.h in Headers */,
-				AFBC1D91189A5EA0008EA224 /* MCRegion.h in Headers */,
+				AFBC1E79189B985F008EA224 /* MCRegion.h in Headers */,
 				AF4D5F27189926CC004A05AC /* Snowball.h in Headers */,
 				AF4D5F28189926CC004A05AC /* Spider.h in Headers */,
-				AF4D5F29189926CC004A05AC /* TileEntity.h in Headers */,
 				AF4D5F2A189926CC004A05AC /* TNTPrimed.h in Headers */,
 				AF4D5F2B189926CC004A05AC /* Zombie.h in Headers */,
 				AF4D5F2C189926CC004A05AC /* Level.h in Headers */,
@@ -540,7 +534,7 @@
 				AF4D5F32189926CC004A05AC /* GameType.h in Headers */,
 				AF4D5F33189926CC004A05AC /* Vector3f.h in Headers */,
 				AF4D5F0C18992693004A05AC /* EntityDataConverter.h in Headers */,
-				AFBC1D93189A5EA0008EA224 /* NBTKit.h in Headers */,
+				AFBC1E7B189B985F008EA224 /* NBTKit.h in Headers */,
 				AF4D5F0D18992693004A05AC /* LevelDataConverter.h in Headers */,
 				AF4D5F0F18992693004A05AC /* Animal.h in Headers */,
 				AF4D5F1018992693004A05AC /* Arrow.h in Headers */,
@@ -550,12 +544,13 @@
 				AF4D5F1418992693004A05AC /* Egg.h in Headers */,
 				AF4D5F1518992693004A05AC /* Entity.h in Headers */,
 				AF4D5F1618992693004A05AC /* EntityType.h in Headers */,
-				AFBC1D92189A5EA0008EA224 /* NBTIntArray.h in Headers */,
 				AF4D5F1718992693004A05AC /* FallingBlock.h in Headers */,
+				AFBC1E7A189B985F008EA224 /* NBTIntArray.h in Headers */,
+				AFBC1DC9189A70EE008EA224 /* DictionaryConverter.h in Headers */,
 				AF4D5F1818992693004A05AC /* InventorySlot.h in Headers */,
 				AF4D5F1918992693004A05AC /* Item.h in Headers */,
 				AF4D5F1A18992693004A05AC /* ItemStack.h in Headers */,
-				AFBC1D94189A5EA0008EA224 /* NBTNumbers.h in Headers */,
+				AFBC1E7C189B985F008EA224 /* NBTNumbers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +642,6 @@
 				AF6010491896FC070077B0AC /* Projectile.m in Sources */,
 				AF60103B1896FC070077B0AC /* Entity.m in Sources */,
 				AF60103C1896FC070077B0AC /* FallingBlock.m in Sources */,
-				AF60104E1896FC070077B0AC /* TileEntity.m in Sources */,
 				AF6010511896FC070077B0AC /* Level.m in Sources */,
 				AF6010531896FC070077B0AC /* ContainerTileEntity.m in Sources */,
 				AF6010551896FC070077B0AC /* SignTileEntity.m in Sources */,

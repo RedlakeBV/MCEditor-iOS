@@ -7,6 +7,7 @@
 //
 
 #import "PlayerAbilities.h"
+#import "NBTNumbers.h"
 
 @implementation PlayerAbilities
 
@@ -38,10 +39,10 @@
 
 -(NSDictionary *)dictionary {
     return @{
-             @"flying" : [NSNumber numberWithBool: _flying],
-             @"instabuild" : [NSNumber numberWithBool: _instabuild],
-             @"invulnerable" : [NSNumber numberWithBool: _invulnerable],
-             @"mayfly" : [NSNumber numberWithBool: _mayFly],
+             @"flying" : NBTByte(_flying),
+             @"instabuild" : NBTByte(_instabuild),
+             @"invulnerable" : NBTByte(_invulnerable),
+             @"mayfly" : NBTByte(_mayFly),
              };
 }
 
