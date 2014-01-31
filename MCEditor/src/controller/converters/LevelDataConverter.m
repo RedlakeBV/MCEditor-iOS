@@ -11,18 +11,18 @@
 @implementation LevelDataConverter
 
 
-+ (NSDictionary*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error
++ (Level*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error
 {
     NSData * data = [[NSFileManager defaultManager] contentsAtPath:path];
     NSRange dataRange = NSMakeRange(8, [data length] - 8);
     NSData *refinedData = [data subdataWithRange:dataRange];
     
     NSMutableDictionary * levelDict = [NBTKit NBTWithData:refinedData name:nil options:NBTLittleEndian error:error];
-    return levelDict;
+    return [[Level alloc] initWithDictionary: levelDict];
 }
 
-+(void)writeLevel:(NSDictionary*)levelDict ToPath:(NSString*)path error:(NSError *__autoreleasing *)error {
-    NSData * newData = [NBTKit dataWithNBT:levelDict name:nil options:NBTLittleEndian error: error];
++(void)writeLevel:(Level*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error {
+    NSData * newData = [NBTKit dataWithNBT:[level dictionary] name:nil options:NBTLittleEndian error: error];
     
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"level_header" ofType:@"dat"];
