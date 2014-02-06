@@ -36,13 +36,13 @@
              @"Motion" : @[NBTFloat([[self motion] blockX]),
                            NBTFloat([[self motion] blockY]),
                            NBTFloat([[self motion] blockZ]),],
-             @"onGround" : NBTByte([self onGround]),
+             @"OnGround" : NBTByte([self onGround]),
              @"Pos" : @[NBTFloat([[self location] blockX]),
                         NBTFloat([[self location] blockY]),
                         NBTFloat([[self location] blockZ]),],
              @"Rotation" : @[
                      NBTFloat([self yaw]),
-                     NBTFloat([self pitch])
+                     NBTFloat([self pitch]),
                      ],
              @"Score" : NBTInt([self score]),
              @"SleepTimer" : NBTShort([self sleepTimer]),
@@ -86,7 +86,7 @@
                                Y:[[dictionary objectForKey:@"BedPositionY"] floatValue]
                                Z:[[dictionary objectForKey:@"BedPositionZ"] floatValue]
                                ]];
-        [self setDimension: [[dictionary objectForKey:@"Dimension"] integerValue]];
+        [self setDimension: [[dictionary objectForKey:@"Dimension"] intValue]];
         [self setScore: [[dictionary objectForKey:@"Score"] intValue]];
         [self setSleeping: [[dictionary objectForKey:@"Sleeping"] boolValue]];
         [self setAbilities: [[PlayerAbilities alloc] initWithDictionary:[dictionary objectForKey:@"abilities"]]];

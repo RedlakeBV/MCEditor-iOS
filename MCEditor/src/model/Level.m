@@ -36,7 +36,7 @@
         [self setGameType: (GameType)[[dictionary objectForKey:@"GameType"] integerValue]];
         [self setLastPlayed: [[dictionary objectForKey:@"LastPlayed"] longValue]];
         [self setLevelName: [dictionary objectForKey:@"LevelName"]];
-        [self setPlatform: [[dictionary objectForKey:@"Platform"] integerValue]];
+        [self setPlatform: [[dictionary objectForKey:@"Platform"] intValue]];
         [self setPlayer: [[Player alloc] initWithDictionary:[dictionary objectForKey:@"Player"]]];
         [self setRandomSeed: [[dictionary objectForKey: @"RandomSeed"] longValue]];
         [self setSizeOnDisk: [[dictionary objectForKey: @"SizeOnDisk"] longValue]];
@@ -45,7 +45,7 @@
         float spawnY = [[dictionary objectForKey:@"SpawnY"] floatValue];
         float spawnZ = [[dictionary objectForKey:@"SpawnZ"] floatValue];
         [self setSpawnPosition: [[Vector3f alloc] initWithX:spawnX Y:spawnY Z:spawnZ]];
-        [self setStorageVersion: [[dictionary objectForKey:@"StorageVersion"] integerValue]];
+        [self setStorageVersion: [[dictionary objectForKey:@"StorageVersion"] intValue]];
         [self setTime: [[dictionary objectForKey:@"Time"] longValue]];
         [self setDayCycleStopTime: [[dictionary objectForKey:@"dayCycleStopTime"] longValue]];
         [self setSpawnMobs: [[dictionary objectForKey:@"spawnMobs"] boolValue]];

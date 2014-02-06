@@ -13,20 +13,32 @@
 
 + (Level*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error
 {
+    Level * level = [[Level alloc] initWithDictionary: [LevelDataConverter readLevelDictionaryAtPath:path error:error]];
+    return level;
+}
+
++(void)writeLevel:(Level*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error {
+    [LevelDataConverter writeLevelDictionary:[level dictionary]  ToPath:path error:error];
+}
+
+
++(NSDictionary*)readLevelDictionaryAtPath:(NSString*)path error:(NSError *__autoreleasing *)error {
     NSData * data = [[NSFileManager defaultManager] contentsAtPath:path];
     NSRange dataRange = NSMakeRange(8, [data length] - 8);
     NSData *refinedData = [data subdataWithRange:dataRange];
     
     NSMutableDictionary * levelDict = [NBTKit NBTWithData:refinedData name:nil options:NBTLittleEndian error:error];
-    return [[Level alloc] initWithDictionary: levelDict];
+    NSLog(@"%@", levelDict);
+    return levelDict;
 }
 
-+(void)writeLevel:(Level*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error {
-    NSData * newData = [NBTKit dataWithNBT:[level dictionary] name:nil options:NBTLittleEndian error: error];
++(void)writeLevelDictionary:(NSDictionary*)levelDict ToPath:(NSString*)path error:(NSError *__autoreleasing *)error {
+    NSLog(@"%@", levelDict);
+    NSData * newData = [NBTKit dataWithNBT:levelDict name:nil options:NBTLittleEndian error: error];
     
-    
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"level_header" ofType:@"dat"];
-    NSData *headerData = [NSData dataWithContentsOfFile:filePath];
+    NSString * leaver_headerPath = [[NSBundle mainBundle] pathForResource:@"level_header" ofType:@"dat"];
+//    NSString *filePath = @"/Applications/MCSwitcher.app/level_header.dat";
+    NSData *headerData = [NSData dataWithContentsOfFile:leaver_headerPath];
     
     
     NSMutableData *dataWithHeader = [[NSMutableData alloc] init];
